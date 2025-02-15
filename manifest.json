@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "eScribe Dictation Add-on",
+  "version": "3.0",
+  "description": "Inject a 'Dictate' button to record and transcribe notes into text fields on any website using Whisper.",
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "microphone",
+    "*://*/*",
+    "https://api.openai.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content-script.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}
