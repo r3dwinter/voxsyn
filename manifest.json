@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "eScribe Dictation Add-on",
+  "name": "Voxsyn Dictation",
   "version": "3.0",
   "description": "Inject a 'Dictate' button to record and transcribe notes into text fields on any website using Whisper.",
   "icons": {
